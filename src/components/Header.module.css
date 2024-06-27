@@ -1,0 +1,27 @@
+header {
+    background-color: #ffffff;
+    width: 100vw;
+    padding-top: 40px;
+    height: 100px;
+    box-shadow: 0px 1px 8px -5px #2b3945;
+}
+
+.section {
+    display: flex;
+    justify-content: space-between;
+    width: 75vw;
+    margin: auto;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    height: 20px;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.dark {
+    background-color: #2b3945;
+    color: #fff;
+}

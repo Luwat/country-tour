@@ -1,0 +1,115 @@
+.ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin: 100px auto;
+    max-width: 78vw;
+    list-style: none;
+}
+
+.li {
+    width: 300px;
+    height: 420px;
+    box-shadow: 0px 0px 10px -4px #858585;
+    border-radius: 5px;
+}
+
+.inputControl {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 78vw;
+    margin: 50px auto;
+}
+
+.inputWrapper {
+    box-shadow: 0px 0px 5px 0px #e4e4e4;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #858585;
+    width: 400px;
+    height: 55px;
+    padding: 20px 0 20px 50px;
+    display: flex;
+    gap: 5px;
+    margin-top: 50px;
+    cursor: text;
+}
+
+.selectWrapper {
+    box-shadow: 0px 0px 5px 0px #e4e4e4;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #858585;
+    width: 200px;
+    height: 55px;
+    margin-top: 50px;
+}
+
+.selectWrapper select {
+    width: inherit;
+    height: inherit;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    padding-left: 20px;
+    appearance: none;
+}
+
+.classic {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #2b3945 50%),
+      linear-gradient(135deg, #2b3945 50%, transparent 50%),
+      linear-gradient(to right, transparent, transparent);
+    background-position:
+      calc(100% - 30px) calc(1em + 10px),
+      calc(100% - 25px) calc(1em + 10px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+  }
+
+.input {
+    border: none;
+    outline: none;
+    padding-left: 20px;
+    font-size: 16px;
+    width: 320px;
+}
+
+
+.dark {
+    background-color: #2b3945;
+    color: #fff;
+}
+
+.darkImg {
+    background-image:
+      linear-gradient(45deg, transparent 50%, #fff 50%),
+      linear-gradient(135deg, #fff 50%, transparent 50%),
+      linear-gradient(to right, transparent, transparent);
+      background-position:
+      calc(100% - 30px) calc(1em + 10px),
+      calc(100% - 25px) calc(1em + 10px),
+      100% 0;
+    background-size:
+      5px 5px,
+      5px 5px,
+      2.5em 2.5em;
+    background-repeat: no-repeat;
+}
+
+@media (max-width: 600px) {
+    .inputWrapper {
+        width: 300px;
+        padding: 20px 0 20px 20px;
+    }
+
+    .input {
+        width: 240px;
+    }
+}

@@ -1,0 +1,26 @@
+img {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid#e7e7e7;
+}
+
+.lower {
+    padding: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #111517;
+}
+
+.h2 {
+    margin: 20px 0;
+}
+
+.p {
+    margin-top: 10px;
+}
+
+.dark {
+    color: #fff;
+}
