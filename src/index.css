@@ -19,3 +19,9 @@
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
 }
+
+@media (max-width: 600px) {
+  body {
+    width: 100%;
+  }
+}
