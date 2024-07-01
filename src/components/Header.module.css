@@ -9,7 +9,7 @@ header {
 .section {
     display: flex;
     justify-content: space-between;
-    width: 75vw;
+    width: 80vw;
     margin: auto;
 }
 
@@ -24,4 +24,10 @@ header {
 .dark {
     background-color: #2b3945;
     color: #fff;
+}
+
+@media (max-width: 600px) {
+    .header {
+        font-size: small;
+    }
 }
