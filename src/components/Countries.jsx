@@ -15,11 +15,6 @@ export default function Countries() {
     setFiltered(() => event.target.value);
   }
 
-  function clickHandler(event) {
-    setFiltered(() => event.target.value);
-  }
-
-
   const filteredCountries = data.filter(
     (item) =>
       item.region === filtered ||
