@@ -31,3 +31,9 @@ header {
         font-size: small;
     }
 }
+
+@media (max-width: 450px) {
+    .header {
+        font-size: xx-small;
+    }
+}

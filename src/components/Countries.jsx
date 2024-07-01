@@ -11,7 +11,11 @@ export default function Countries() {
   const [filtered, setFiltered] = useState("");
   const data = useRouteLoaderData("root");
 
-  function handleFilter(event) {
+  function changeHandler(event) {
+    setFiltered(() => event.target.value);
+  }
+
+  function clickHandler(event) {
     setFiltered(() => event.target.value);
   }
 
@@ -19,9 +23,7 @@ export default function Countries() {
   const filteredCountries = data.filter(
     (item) =>
       item.region === filtered ||
-      item.name.common.includes(filtered) ||
-      item.name.common.toLowerCase().includes(filtered) ||
-      item.name.common.toUpperCase().includes(filtered)
+      item.name.common.toLowerCase().includes(filtered.toLowerCase())
   );
 
 
@@ -30,10 +32,10 @@ export default function Countries() {
       <div className={classes.inputControl}>
         <div className={`${classes.inputWrapper} ${theme === 'dark' ? classes.dark : null} `}>
           <Icon path={mdiMagnify} size={1}/>
-          <p><input type="text" placeholder="Search for a country..." onChange={handleFilter} className={`${classes.input} ${theme === 'dark' ? classes.dark : null}`}/></p>
+          <p><input type="text" placeholder="Search for a country..." onChange={changeHandler} className={`${classes.input} ${theme === 'dark' ? classes.dark : null}`}/></p>
         </div>
         <p className={`${classes.selectWrapper} ${theme === 'dark' ? classes.dark : null}`}>
-          <select className={`${theme === 'dark' ? classes.dark : null} ${theme === 'dark' ? classes.darkImg : classes.classic}`} name="" id="" onChange={handleFilter}>
+          <select className={`${theme === 'dark' ? classes.dark : null} ${theme === 'dark' ? classes.darkImg : classes.classic}`} name="" id="" onChange={changeHandler}>
             <option value="">Filter by Region</option>
             <option value="Africa">Africa</option>
             <option value="Americas">America</option>

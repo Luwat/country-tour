@@ -1,8 +1,9 @@
 .section {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     margin: 50px auto;
-    width: 75vw;
+    width: 80vw;
 }
 
 .img {
@@ -11,6 +12,7 @@
 
 .flexParent {
     margin-left: 50px;
+    font-size: 16px;
 }
 
 .h1 {
@@ -20,10 +22,12 @@
 .flexContainer {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .pList {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .li {
