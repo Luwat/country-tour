@@ -9,10 +9,10 @@ export default function Country({title, image, population, region, capital}) {
     return (
         <NavLink to={title}>
             <div>
-                <img className={classes.img} src={image} alt={image} width={'300px'} height={'190px'}/>
+                <img className={classes.img} src={image} alt={image} width={'250px'} height={'140px'}/>
             </div>
             <div className={`${classes.lower} ${theme === 'dark' ? classes.dark : null}`}>
-                <h2>Title: {title}</h2>
+                <h3>Title: {title}</h3>
                 <p>Population: {population}</p>
                 <p>Region: {region}</p>
                 <p>Capital: {capital}</p>
