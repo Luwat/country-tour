@@ -23,7 +23,7 @@ export default function Countries() {
 
 
   return (
-    <>
+    <main>
       <div className={classes.inputControl}>
         <div className={`${classes.inputWrapper} ${theme === 'dark' ? classes.dark : null} `}>
           <Icon path={mdiMagnify} size={1}/>
@@ -54,6 +54,6 @@ export default function Countries() {
           </li>
         ))}
       </ul>
-    </>
+    </main>
   );
 }

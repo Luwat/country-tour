@@ -1,7 +1,7 @@
 .section {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(320px, 600px));
+    gap: 50px;
     margin: 50px auto;
     width: 80vw;
 }
@@ -9,6 +9,7 @@
 .img {
     width: 500px;
 }
+
 
 .flexParent {
     margin-left: 50px;

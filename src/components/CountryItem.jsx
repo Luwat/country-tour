@@ -14,6 +14,9 @@ export default function CountryItem() {
   
 
   return (
+    <main>
+      <NavLink to={'..'}><button>Back</button></NavLink>
+
     <section className={classes.section}>
       <div>
         <img
@@ -49,7 +52,7 @@ export default function CountryItem() {
                   const countryBorder = data.find((el) => el.cca3 === item);
                   return (
                     <li key={item}>
-                      <NavLink to={`/${countryBorder.name.common}`}>{countryBorder.name.common}</NavLink>
+                      <NavLink to={`/${countryBorder.name.common}`}><button>{countryBorder.name.common}</button></NavLink>
                     </li>
                   );
                 })
@@ -59,5 +62,6 @@ export default function CountryItem() {
         </div>
       </div>
     </section>
+    </main>
   );
 }

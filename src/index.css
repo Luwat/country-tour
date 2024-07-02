@@ -20,6 +20,15 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
+main {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+  width: 80vw;
+  margin: auto;
+}
+
 @media (max-width: 600px) {
   body {
     width: 100%;
