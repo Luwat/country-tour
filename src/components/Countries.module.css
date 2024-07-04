@@ -4,7 +4,6 @@
     flex-wrap: wrap;
     gap: 75px;
     margin: 50px auto 100px;
-    max-width: 90vw;
     list-style: none;
     font-size: 14px;
 }
@@ -20,7 +19,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 90vw;
     margin: 50px auto;
 }
 
@@ -31,18 +29,19 @@
     color: #858585;
     width: 450px;
     height: 55px;
-    padding: 20px 0 20px 50px;
+    padding-left: 50px;
     display: flex;
+    align-items: center;
     gap: 5px;
-    cursor: text;
 }
 
 .input {
     border: none;
     outline: none;
-    padding-left: 20px;
+    padding-left: 10px;
     font-size: 16px;
-    width: 320px;
+    width: 370px;
+    height: 55px;
 }
 
 .selectWrapper {
@@ -106,6 +105,16 @@
         justify-content: space-around;
     }
 
+    .inputWrapper {
+        width: 380px;
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
+
+    .input {
+        width: 330px;
+    }
+
 }
 
 @media (max-width: 600px) {
@@ -118,13 +127,11 @@
 @media (max-width: 480px) {
     .ul {
         justify-content: center;
-        gap: 0;
     }
 
     .inputWrapper {
         width: 300px;
-        padding-right: 10px;
-        margin-top: 20px;
+        flex-shrink: 1;
     }
 
     .input {

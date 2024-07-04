@@ -33,4 +33,8 @@ main {
   body {
     width: 100%;
   }
+
+  main {
+    width: 80vw;
+  }
 }
