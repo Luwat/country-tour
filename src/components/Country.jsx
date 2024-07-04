@@ -12,7 +12,7 @@ export default function Country({title, image, population, region, capital}) {
                 <img className={classes.img} src={image} alt={image} width={'250px'} height={'140px'}/>
             </div>
             <div className={`${classes.lower} ${theme === 'dark' ? classes.dark : null}`}>
-                <h3>Title: {title}</h3>
+                <h3>{title}</h3>
                 <p>Population: {population}</p>
                 <p>Region: {region}</p>
                 <p>Capital: {capital}</p>
