@@ -9,7 +9,7 @@ header {
 .section {
     display: flex;
     justify-content: space-between;
-    width: 80vw;
+    width: 90vw;
     margin: auto;
 }
 
@@ -29,6 +29,10 @@ header {
 @media (max-width: 600px) {
     .header {
         font-size: small;
+    }
+
+    .section {
+        width: 80vw;
     }
 }
 

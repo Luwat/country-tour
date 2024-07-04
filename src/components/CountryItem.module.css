@@ -3,7 +3,7 @@
     grid-template-columns: repeat(2, minmax(320px, 600px));
     gap: 50px;
     margin: 50px auto;
-    width: 80vw;
+    width: 90vw;
 }
 
 .img {
