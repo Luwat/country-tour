@@ -13,9 +13,9 @@ export default function Country({title, image, population, region, capital}) {
             </div>
             <div className={`${classes.lower} ${theme === 'dark' ? classes.dark : null}`}>
                 <h3>{title}</h3>
-                <p>Population: {population}</p>
-                <p>Region: {region}</p>
-                <p>Capital: {capital}</p>
+                <p><b>Population:</b> {population}</p>
+                <p><b>Region:</b> {region}</p>
+                <p><b>Capital:</b> {capital}</p>
             </div>
         </NavLink>
     )
