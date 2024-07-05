@@ -21,6 +21,10 @@ header {
     cursor: pointer;
 }
 
+.themeText {
+    font-weight: 800;
+}
+
 .dark {
     background-color: #2b3945;
     color: #fff;

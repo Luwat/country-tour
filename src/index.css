@@ -18,22 +18,28 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
+  font-weight: 300;
+}
+
+body {
+  width: 100vw;
 }
 
 main {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+
   width: 90vw;
   margin: auto;
 }
 
-@media (max-width: 600px) {
-  body {
-    width: 100%;
-  }
+h3, b {
+  font-weight: 600;
+}
 
+h1 {
+  font-weight: 800;
+}
+
+@media (max-width: 600px) {
   main {
     width: 80vw;
   }

@@ -25,7 +25,7 @@ export default function Header() {
         </div>
         <div onClick={toggleTheme} className={classes.right}>
           {theme === 'light' ? <Icon path={mdiWhiteBalanceSunny} size={1}/> :<Icon path={mdiMoonWaningCrescent} rotate={-25} size={1}/>}
-          <p >{theme} mode</p>
+          <p className={classes.themeText}>{theme} mode</p>
         </div>
       </section>
     </header>
