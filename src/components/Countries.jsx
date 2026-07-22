@@ -10,15 +10,18 @@ export default function Countries() {
   const { theme } = useContext(ThemeContext)
   const [filtered, setFiltered] = useState("");
   const data = useRouteLoaderData("root");
+  const { meta: pagination, objects } = data;
+
+  console.log(objects);
 
   function changeHandler(event) {
     setFiltered(() => event.target.value);
   }
 
-  const filteredCountries = data.filter(
+  const filteredCountries = objects.filter(
     (item) =>
       item.region === filtered ||
-      item.name.common.toLowerCase().includes(filtered.toLowerCase())
+      item.names.common.toLowerCase().includes(filtered.toLowerCase())
   );
 
 
@@ -43,13 +46,13 @@ export default function Countries() {
       </div>
       <ul className={classes.ul}>
         {filteredCountries.map((country) => (
-          <li key={country.name.common} className={`${classes.li} ${theme === 'dark' ? classes.dark : null}`}>
+          <li key={country.names.common} className={`${classes.li} ${theme === 'dark' ? classes.dark : null}`}>
             <Country
-              title={country.name.common}
-              image={country.flags.png}
+              title={country.names.common}
+              image={country.flag.url_png}
               population={country.population}
               region={country.region}
-              capital={country.capital}
+              capital={country.capitals.name}
             />
           </li>
         ))}
