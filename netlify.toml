@@ -1,0 +1,11 @@
+# netlify.toml
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+  functions = "netlify/functions"
+
+[dev]
+  command = "npm run dev" # Your Vite dev server command
+  port = 8888              # Netlify proxy server port
+  targetPort = 5173        # Default Vite dev server port
