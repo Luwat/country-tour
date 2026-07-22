@@ -10,7 +10,12 @@ export default function RootLayout() {
 }
 
 export async function loadCountry() {
-    const response = await fetch('https://restcountries.com/v3.1/all');
+    const response = await fetch('https://restcountries.com/v3.1/all', {
+        headers: {
+            'Content-Type': 'application/json',
+            'Authorization': 'Bearer import.meta.env.VITE_REST_COUNTRIES_API_KEY'
+        }
+    });
 
     if (!response.ok) {
         throw json({message: 'Could not fetch data'}, {status: 500});
