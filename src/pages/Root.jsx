@@ -3,18 +3,27 @@ import { Outlet, json } from "react-router-dom";
 import Header from "../components/Header";
 
 export default function RootLayout() {
-    return <>
-    <Header />
-    <Outlet />
+  return (
+    <>
+      <Header />
+      <Outlet />
     </>
+  );
 }
 
 export async function loadCountry() {
-    const response = await fetch('https://restcountries.com/v3.1/all?fields=name,flags,population,region,capital');
+  const response = await fetch(
+    "https://restcountries.com/v5?response_fields=names,flag,population,region,capitals",
+    {
+      headers: {
+        Authorization: `Bearer ${import.meta.env.VITE_REST_COUNTRIES_API_KEY}`,
+      },
+    },
+  );
 
-    if (!response.ok) {
-        throw json({message: 'Could not fetch data'}, {status: 500});
-    }
+  if (!response.ok) {
+    throw json({ message: "Could not fetch data" }, { status: 500 });
+  }
 
-    return response;
+  return response;
 }
